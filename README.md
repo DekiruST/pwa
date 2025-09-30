@@ -23,12 +23,12 @@ npm run gen:vapid
 # Copia los valores en un archivo .env.local:
 # VAPID_PUBLIC_KEY=...
 # VAPID_PRIVATE_KEY=...
-# VAPID_SUBJECT=mailto:tu-email@dominio.com
+# VAPID_SUBJECT=mailto:
 
 # 4) Ejecuta en desarrollo
 npm run dev
 
-Visita **http://localhost:3000** desde un navegador compatible.
+Visita **https://pwa-six-topaz.vercel.app/** desde un navegador compatible.
 
 ##  Configuración de entorno
 
@@ -89,11 +89,11 @@ Instálala desde el navegador (Add to Home Screen / Instalar app).
 - **Offline:** apaga tu red y recarga **/client-demo** — verás datos desde cache. En **/notes**, pulsa **Sincronizar** sin red para encolar; al volver la red, se envía (BG Sync).
 
 ### 4) Notificaciones
-- En **/notifications**, pulsa **Pedir permiso** y **Local** (muestra sin servidor).
+- En **/notificaciones**, pulsa **Pedir permiso** y **Local** (muestra sin servidor).
 - Para **Push**, genera VAPID, suscríbete y ejecuta **Enviar Push (servidor)** o `npm run push`.
 
 ### 5) Elementos físicos
-- En **/device** prueba **cámara** (captura frame), **GPS** (coordenadas) y **acelerómetro** (valores por 15s).
+- En **/dispositivo** prueba **cámara** (captura frame), **GPS** (coordenadas) y **acelerómetro** (valores por 15s).
 > Algunos navegadores requieren **HTTPS** o permisos especiales. En local, usa **localhost** o un túnel HTTPS.
 
 ##  Estructura
@@ -126,6 +126,6 @@ pwa-case-study/
 
 ##  Despliegue
 
-- **Vercel**, **Netlify** o **Render** funcionan bien para Next.js.
-- Asegura variables de entorno (`VAPID_*`) en panel de tu plataforma.
-- Prueba en un dispositivo móvil real para sensores/instalación PWA.
+- **Vercel**,  funciona bien para Next.js.
+- Asegurar variables de entorno (`VAPID_*`) en panel de tu plataforma.
+- Probar en un dispositivo móvil real para sensores/instalación PWA.
