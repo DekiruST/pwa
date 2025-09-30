@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    typedRoutes: true,
-  },
+  experimental: { typedRoutes: true },
   reactStrictMode: true,
   output: 'standalone',
   headers: async () => [
     {
-      source: "/(.*)",
+      source: '/(.*)',
       headers: [
-        { key: "Permissions-Policy", value: "camera=(), geolocation=(), microphone=()" }
-      ]
-    }
-  ]
+
+        { key: 'Permissions-Policy', value: 'camera=(self), geolocation=(self), microphone=(self)' },
+      ],
+    },
+  ],
 };
 export default nextConfig;
