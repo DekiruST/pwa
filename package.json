@@ -1,0 +1,28 @@
+{
+  "name": "pwa-case-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "echo \"(Lint step placeholder)\"",
+    "push": "node scripts/send-push.js",
+    "gen:vapid": "node scripts/gen-vapid.js"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.0",
+    "idb": "^8.0.0",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "typescript": "^5.6.3"
+  }
+}

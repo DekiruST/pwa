@@ -1,0 +1,11 @@
+﻿node_modules/
+.next/
+.vercel/
+.env*
+npm-debug.log*
+yarn-*.log*
+pnpm-*.log*
+coverage/
+dist/
+build/
+*.zip
